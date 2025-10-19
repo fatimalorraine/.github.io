@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fatima Lorraine Ibarreta — Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Fatima Lorraine Ibarreta — Experienced Hotel Reservation & Front Office Supervisor. Accountant • Executive Secretary • Administrative Assistant" />
+  <style>
+    :root{--bg:#fbf7f4;--card:#ffffff;--muted:#7c7069;--olive:#6b7a49;--olive-2:#9aa47a;--shadow:0 8px 24px rgba(99,87,77,0.08);--radius:14px;--max-w:920px;}
+    *{box-sizing:border-box}html,body{height:100%}
+    body{margin:0;font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,var(--bg),#fff);color:#2b2b2b;line-height:1.5;padding:40px 20px;display:flex;justify-content:center;align-items:flex-start;}
+    .container{width:100%;max-width:var(--max-w);background:transparent;}
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:28px;margin-bottom:18px;}
+    .hero{display:flex;gap:24px;align-items:center;padding:20px;}
+    .profile-photo{width:120px;height:120px;border-radius:50%;object-fit:cover;border:6px solid rgba(107,122,73,0.08);background:linear-gradient(180deg,#faf7f5,#f3ebe7);flex:0 0 120px;}
+    .hero-info{flex:1;min-width:0;}
+    .name{font-size:20px;font-weight:700;margin:0 0 6px 0;color:#222;}
+    .tagline{margin:0 0 12px 0;color:var(--muted);font-weight:500;}
+    .meta{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+    .chip{background:#f6f3f1;border-radius:999px;padding:6px 10px;font-size:13px;color:var(--muted);}
+    .controls{display:flex;gap:12px;margin-top:12px;align-items:center;flex-wrap:wrap;}
+    .btn{display:inline-flex;align-items:center;gap:10px;border:0;cursor:pointer;padding:10px 14px;border-radius:10px;font-weight:600;text-decoration:none;font-size:14px;}
+    .btn-primary{background:linear-gradient(90deg,var(--olive),var(--olive-2));color:#fff;box-shadow:0 6px 16px rgba(107,122,73,0.18);}
+    .btn-outline{background:transparent;border:1px solid #eee;color:var(--olive);}
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:18px;}
+    .section{margin-bottom:16px;}
+    h2.section-title{margin:0 0 12px 0;font-size:16px;color:var(--olive);letter-spacing:0.4px;}
+    p.lead{color:var(--muted);margin:0 0 8px 0}
+    .experience-item{margin-bottom:12px;}
+    .role{font-weight:650;margin:0;font-size:15px;}
+    .period{font-size:13px;color:var(--muted);margin-top:4px;}
+    ul.clean{padding-left:18px;margin:8px 0 4px 0;}
+    .sidebar .card{padding:18px;}
+    .skill{background:#f5f2ef;border-radius:8px;padding:8px 10px;font-size:13px;color:var(--muted);display:inline-block;margin:6px 6px 0 0;}
+    .award{background:linear-gradient(180deg,#fff,#fbf9f7);border-radius:8px;padding:10px;margin-top:8px;font-size:14px;}
+    .contact-note{font-size:14px;color:var(--muted);margin-top:8px;}
+    @media (max-width:920px){.grid{grid-template-columns:1fr}.hero{flex-direction:row;gap:16px}.profile-photo{width:100px;height:100px}}
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="card hero">
+      <img alt="Profile photo" class="profile-photo" src="https://via.placeholder.com/120x120.png?text=Photo">
+      <div class="hero-info">
+        <h1 class="name">Fatima Lorraine V. Ibarreta</h1>
+        <p class="tagline">Experienced Hotel Reservation & Front Office Supervisor • Skilled in Accounting & Administration</p>
+        <div class="meta">
+          <span class="chip">Nationality: Philippines</span>
+          <span class="chip">Languages: English · Arabic · Filipino</span>
+          <span class="chip">Article: 18 Transferable</span>
+        </div>
+        <div class="controls">
+          <button class="btn btn-primary" id="contactBtn">✉ Contact Me</button>
+          <a class="btn btn-outline" href="Fatima_Lorraine_CV.pdf" download>⤓ Download CV</a>
+        </div>
+      </div>
+    </section>
+    <div class="grid">
+      <div>
+        <section class="card section">
+          <h2 class="section-title">About</h2>
+          <p class="lead">Objective: To obtain a meaningful and challenging position that enables me to confidently employ my diversified skills and intelligence for personal growth and professional advancement while making a positive contribution.</p>
+        </section>
+      </div>
+      <aside class="sidebar">
+        <div class="card">
+          <h2 class="section-title">Achievements & Awards</h2>
+          <div class="award"><strong>Chief Girl Scout of the Philippines</strong><br>Awarded at Malacañang Palace — 2005</div>
+          <div class="award"><strong>Passed Civil Service Commission Exam</strong><br>CSC Exam 2012 — Regional 5</div>
+          <div class="award"><strong>Employee of the Month (x2)</strong><br>Bravo Royal Hotel Suites, Kuwait</div>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <script>
+    (function(){
+      const user="fatimalorraine23",domain="gmail.com";
+      const subject=encodeURIComponent("Job Opportunity / Inquiry");
+      const body=encodeURIComponent("Hello Fatima,%0D%0A%0D%0AI would like to discuss a job opportunity with you.%0D%0A%0D%0ABest regards,");
+      document.getElementById("contactBtn").addEventListener("click",()=>{
+        window.location.href=`mailto:${user}@${domain}?subject=${subject}&body=${body}`;
+      });
+    })();
+  </script>
+</body>
+</html>
